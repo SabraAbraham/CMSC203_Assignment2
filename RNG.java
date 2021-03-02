@@ -11,9 +11,7 @@ import java.util.Scanner;
 public class RNG {
 	private static int count=0;
 	static Scanner scan;
-	
-	public RNG() 
-	{
+	public RNG() {
 		count++;
 	}
 	
@@ -45,8 +43,8 @@ public class RNG {
 		//do {
 		boolean rtnValue = true;
 		if (nextGuess>=highGuess || nextGuess<=lowGuess) {
-				   System.out.println("   Guess must be between "+lowGuess+" and "+highGuess+
-						   ". Try again");				   
+				   System.out.println("Guess must be between "+lowGuess+" and "+highGuess+
+						   ".  Try again");				   
 				   rtnValue = false;
 			   }
 		//	} while (nextGuess>=highGuess || nextGuess<=lowGuess);
